@@ -12,7 +12,7 @@
 
 *補足：サブスクライバでグラフの表示と同時にターミナルで座標と受け取ったデータが確認できます。*
 - 動作の様子:
-  https://youtu.be/OE-0spxYh6A
+  https://youtu.be/PaRDqg_M27w
 ## 動作環境
 - Ubuntu18.04(ノートPC)
 - ROS(melodic)
