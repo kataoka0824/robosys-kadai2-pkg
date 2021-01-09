@@ -40,10 +40,4 @@ button_pub.grid(row=0,column=4)
 button_exit=tk.Button(root,text="閉じる",command=exit_window)
 button_exit.grid(row=1,column=2)
 root.mainloop()
-"""while not rospy.is_shutdown():
-    key_inp=String()
-    key_inp.data,n=input("key[x,y,z] distance;").split()
-    n=int(n)
-    pub.publish(key_inp)
-    pub2.publish(n)
-    rate.sleep()"""
+

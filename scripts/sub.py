@@ -10,12 +10,14 @@ axis="n"
 pos_x=[0]
 pos_y=[0]
 pos_z=[0]
+#軸に文字データを代入
 def cb_key(message):
     global axis,role
     rospy.loginfo(message.data)
     axis=message.data
     print(axis)
     plt.close()
+#代入した軸で距離分足し、座標をプロット
 def cb_dist(message):
     rospy.sleep(0.02)
     global axis,position
@@ -34,13 +36,11 @@ def cb_dist(message):
     pos_y.append(position[1])
     pos_z.append(position[2])
     print(position)
-    print(axis)
     ax.plot(pos_x,pos_y,pos_z,marker="o")
     ax.plot(pos_x[0:1],pos_y[0:1],pos_z[0:1],color="r",marker="o")
     ax.plot(pos_x[-1:],pos_y[-1:],pos_z[-1:],color="c",marker="o")
     plt.draw()
     plt.pause(5)
-    #plt.clf()
 
 if __name__ == '__main__':
     rospy.init_node('sub_node')
