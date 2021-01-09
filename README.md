@@ -26,7 +26,7 @@
 ### 閉じる際
 　Ctrl-cで切ることができます。
 
-- 動作の様子:
+## 動作の様子
   https://youtu.be/PaRDqg_M27w
 ## 動作環境
 - Ubuntu18.04(ノートPC)
