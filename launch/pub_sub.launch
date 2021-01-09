@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="robosys-kadai2-pkg" name="pub_node" type="pub.py"/>
+	<node pkg="robosys-kadai2-pkg" name="sub_node" type="sub.py"/>
+</launch>
